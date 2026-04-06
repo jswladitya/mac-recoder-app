@@ -61,6 +61,19 @@
       height: 0;
     }
   }
+
+  --animate-marquee: marquee var(--duration, 20s) linear infinite;
+  --animate-marquee-reverse: marquee-reverse var(--duration, 20s) linear infinite;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+  @keyframes marquee-reverse {
+    from { transform: translateX(calc(-100% - var(--gap))); }
+    to { transform: translateX(0); }
+  }
 }
 
 :root {
