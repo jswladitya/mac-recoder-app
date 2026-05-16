@@ -4,7 +4,7 @@ import { toFumadocsSource } from "fumadocs-mdx/runtime/server";
 import { Suspense } from "react";
 import { BlogCard } from "@/components/blog-card";
 import { TagFilter } from "@/components/tag-filter";
-import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

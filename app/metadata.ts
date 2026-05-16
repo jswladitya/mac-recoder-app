@@ -2,19 +2,16 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/site";
 
 export const metadataKeywords = [
-  "Blog",
-  "React",
-  "MagicUI Blog",
-  "MagicUI Blog Template",
-  "MagicUI Blog Template Next.js",
-  "MagicUI Blog Template Tailwind",
-  "MagicUI Blog Template Shadcn",
-  "Next.js Blog",
-  "React Blog",
-  "Web Development",
-  "Tutorials",
-  "MDX Blog",
-  "Modern Blog Template",
+  "Screen Recorder",
+  "Auto Zoom",
+  "Screen Recording",
+  "Sleek Demo",
+  "SleekDemo",
+  "Mac Screen Recorder",
+  "Demo Recording",
+  "Video Recording",
+  "Automatic Zoom Recording",
+  "Beautiful Screen Recordings",
 ];
 
 export const metadata: Metadata = {
@@ -23,11 +20,11 @@ export const metadata: Metadata = {
   keywords: metadataKeywords,
   authors: [
     {
-      name: "MagicUI Team",
-      url: "https://magicui.design",
+      name: "SleekDemo",
+      url: "https://www.sleekdemo.com",
     },
   ],
-  creator: "MagicUI",
+  creator: "SleekDemo",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -35,12 +32,21 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "SleekDemo - Auto zoom screen recorder",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: "@magicui_design",
+    images: [`${siteConfig.url}/og-image.png`],
+    creator: "@sleekdemo",
   },
   robots: {
     index: true,
