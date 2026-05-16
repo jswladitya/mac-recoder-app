@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 
 export function Hero() {
   return (
@@ -8,7 +8,7 @@ export function Hero() {
           style={{ "--shimmer-width": "100px" } as React.CSSProperties}
           className="mx-auto max-w-md text-neutral-600/50 dark:text-neutral-400/50 bg-clip-text bg-no-repeat [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite] bg-gradient-to-r from-neutral-100 via-black/80 via-50% to-neutral-100 dark:from-neutral-900 dark:via-white/80 dark:to-neutral-900 inline-flex items-center justify-center animate-pulse"
         >
-          <span>✨ Introducing Magic UI Template</span>
+          <span>✨ Introducing SleekDemo</span>
           <svg
             width="15"
             height="15"
@@ -27,16 +27,16 @@ export function Hero() {
         </p>
       </div>
       <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl mt-4">
-        Magic UI is the new way
-        <br className="hidden md:block" /> to build landing pages.
+        Beautiful Screen Recordings
+        <br className="hidden md:block" /> with auto zoom.
       </h1>
-      <p className="mb-12 text-lg tracking-tight text-gray-500 dark:text-gray-400 md:text-xl text-balance">
-        Beautifully designed, animated components and templates built with
-        <br className="hidden md:block" /> Tailwind CSS, React, and Framer Motion.
-      </p>
+      {/* <p className="mb-12 text-lg tracking-tight text-gray-500 dark:text-gray-400 md:text-xl text-balance">
+        Create stunning, clickable screen recording GIFs that automatically
+        highlight clickable elements.
+      </p> */}
       <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow-sm hover:bg-primary/90 h-9 px-4 py-2 gap-1 rounded-lg text-primary-foreground ease-in-out">
-        <span>Get Started for free</span>
-        <svg
+        <span>Under Development</span>
+        {/* <svg
           width="15"
           height="15"
           viewBox="0 0 15 15"
@@ -50,19 +50,19 @@ export function Hero() {
             fillRule="evenodd"
             clipRule="evenodd"
           ></path>
-        </svg>
+        </svg> */}
       </button>
 
       <div className="relative mt-20 [perspective:2000px]">
         <div className="rounded-xl border border-border bg-card shadow-2xl overflow-hidden aspect-[16/9]">
           <div className="w-full h-full bg-muted flex items-center justify-center relative">
-            {/* Replaced placeholder with an Unsplash image */}
-            <Image
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
-              alt="Dashboard UI Mockup"
-              fill
-              className="object-cover"
-              unoptimized
+            <video
+              src="https://kh12dfduhh.ufs.sh/f/mdESasgdsJvWr9NyI9DLhTo8fsRM4bcnaqXy0PWlZI2Kzt57"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

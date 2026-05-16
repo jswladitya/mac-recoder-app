@@ -7,6 +7,6 @@ const create = browser<typeof Config, import("fumadocs-mdx/runtime/types").Inter
   }
 }>();
 const browserCollections = {
-  docs: create.doc("docs", {"nextjs-16-seo-blog-architecture.mdx": () => import("../blog/content/nextjs-16-seo-blog-architecture.mdx?collection=docs"), }),
+  docs: create.doc("docs", {}),
 };
 export default browserCollections;

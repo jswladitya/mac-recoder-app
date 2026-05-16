@@ -4,8 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/lib/site";
 import { metadataKeywords } from "./metadata";
-import { SiteNav } from "@/components/site-nav";
-import Footer from "@/components/footer";
+
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -40,9 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SiteNav />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
