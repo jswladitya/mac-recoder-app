@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Magic UI Blog",
+  name: "SleekDemo",
   url: "https://blog-magicui.vercel.app",
   description:
-    "Modern React and web development tutorials, insights, and best practices.",
+    "SleekDemo - Auto zoom screen recorder. Create beautiful screen recordings with automatic zoom.",
 };
 
 export type SiteConfig = typeof siteConfig;

@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} - Auto zoom screen recorder`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,

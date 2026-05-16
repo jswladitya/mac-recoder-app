@@ -5,6 +5,11 @@ import { Suspense } from "react";
 import { BlogCard } from "@/components/blog-card";
 import { TagFilter } from "@/components/tag-filter";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 interface BlogData {
   title: string;
