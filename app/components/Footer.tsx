@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/logo";
 
 const Github = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -53,16 +54,17 @@ const Linkedin = (props: React.SVGProps<SVGSVGElement>) => (
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
+
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background py-12 px-6 md:px-8 mt-20">
+    <footer className="bg-background py-12 px-6 md:px-8">
       <div className="max-w-[80rem] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
         <div className="col-span-2 lg:col-span-2 flex flex-col gap-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            Magic UI
+          <Link href="/" className="flex items-center w-fit">
+            <Logo className="h-6 w-auto" />
           </Link>
           <p className="text-muted-foreground text-sm max-w-sm">
-            Building the next generation of modern software interfaces, empowering developers and designers everywhere.
+            Create beautiful, professional screen recordings with automatic zoom that highlights your clicks and interactions.
           </p>
           <div className="flex flex-row gap-4 mt-2">
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -79,17 +81,16 @@ export function Footer() {
 
         <div className="flex flex-col gap-y-4">
           <h4 className="font-semibold text-foreground">Product</h4>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Features</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Integration</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Pricing</Link>
+          <Link href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">Features</Link>
+          <Link href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">Pricing</Link>
+          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Download</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Changelog</Link>
         </div>
 
         <div className="flex flex-col gap-y-4">
           <h4 className="font-semibold text-foreground">Company</h4>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Careers</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link>
+          <Link href="/#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
         </div>
 
@@ -97,16 +98,15 @@ export function Footer() {
           <h4 className="font-semibold text-foreground">Legal</h4>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Cookie Policy</Link>
         </div>
       </div>
 
-      <div className="max-w-[80rem] mx-auto mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} Magic UI Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} SleekDemo. All rights reserved.
         </p>
         <p className="text-xs text-muted-foreground flex items-center">
-          Designed with ❤️ in California
+          Built with ❤️ for creators by Aditya Jaiswal
         </p>
       </div>
     </footer>

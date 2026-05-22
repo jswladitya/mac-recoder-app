@@ -1,11 +1,33 @@
-import { Hero } from "./components/Hero";
+import HeroSection from "@/components/hero-section";
+import { Features } from "./components/Features";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
+import FAQ from "./components/FAQ";
+import { CTA } from "./components/CTA";
+import { Footer } from "./components/Footer";
+
+const DottedSeparator = () => (
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="w-full h-px border-t border-dotted border-border" />
+  </div>
+);
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background font-sans antialiased">
-      <main className="mx-auto flex-1 overflow-hidden">
-        <Hero />
-      </main>
+      <HeroSection />
+      {/* <DottedSeparator /> */}
+      <Features />
+      <DottedSeparator />
+      <Testimonials />
+      <DottedSeparator />
+      <Pricing />
+      <DottedSeparator />
+      <FAQ />
+      <DottedSeparator />
+      <CTA />
+      <DottedSeparator />
+      <Footer />
     </div>
   );
 }
