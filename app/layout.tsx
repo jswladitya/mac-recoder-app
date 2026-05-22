@@ -53,14 +53,14 @@ export default function RootLayout({
 
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+      className={`${GeistSans.variable} ${GeistMono.variable} dark antialiased`}
       suppressHydrationWarning
     >
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          forcedTheme="dark"
           disableTransitionOnChange
         >
           {children}
