@@ -41,7 +41,7 @@ export default function Testimonials() {
                             key={index}
                             className="bg-card ring-border text-foreground space-y-3 rounded-2xl p-4 text-sm ring-1">
                             <div className="flex gap-3">
-                                <div className="before:border-foreground/10 relative size-5 shrink-0 rounded-full before:absolute before:inset-0 before:rounded-full before:border">
+                                <div className="before:border-foreground/10 relative size-8 shrink-0 rounded-full before:absolute before:inset-0 before:rounded-full before:border">
                                     <Image
                                         src={testimonial.avatar}
                                         alt={testimonial.name}

@@ -74,13 +74,23 @@
     from { transform: translateX(calc(-100% - var(--gap))); }
     to { transform: translateX(0); }
   }
-  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite
-;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
   @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);}
-  to {
-    transform: translateY(calc(-100% - var(--gap)));}}}
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  --animate-border-beam: border-beam var(--duration, 6s) infinite linear;
+  @keyframes border-beam {
+    100% {
+      offset-distance: 100%;
+    }
+  }
+}
 
 :root {
   --font-sans: var(--font-geist-sans);

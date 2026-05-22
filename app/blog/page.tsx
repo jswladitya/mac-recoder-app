@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { BlogCard } from "@/components/blog-card";
 import { TagFilter } from "@/components/tag-filter";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { SiteNav } from "@/components/site-nav";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default async function BlogIndexPage({
 
   return (
     <div className="min-h-screen bg-background relative">
+      <SiteNav />
       <div className="absolute top-0 left-0 z-0 w-full h-[200px] mask-[linear-gradient(to_top,transparent_25%,black_95%)]">
         <FlickeringGrid
           className="absolute top-0 left-0 size-full"

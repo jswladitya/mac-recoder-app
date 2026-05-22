@@ -14,8 +14,10 @@ interface TableOfContentsProps {
 }
 
 export function TableOfContents({ className }: TableOfContentsProps) {
-  const headings = React.useMemo<Heading[]>(() => {
-    if (typeof document === "undefined") return [];
+  const [headings, setHeadings] = useState<Heading[]>([]);
+  const [activeId, setActiveId] = useState<string>("");
+
+  useEffect(() => {
     const headingElements = document.querySelectorAll("h1, h2");
     const headingsArray: Heading[] = [];
 
@@ -29,9 +31,9 @@ export function TableOfContents({ className }: TableOfContentsProps) {
       }
     });
 
-    return headingsArray;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setHeadings(headingsArray);
   }, []);
-  const [activeId, setActiveId] = useState<string>("");
 
   const handleClick = async (id: string) => {
     const element = document.getElementById(id);

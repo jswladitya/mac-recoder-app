@@ -25,7 +25,7 @@ export default function Pricing() {
 
                 {/* Premium Centered Single Pricing Card */}
                 <div className="mx-auto max-w-xl">
-                    <div className="relative group rounded-3xl bg-linear-to-b from-zinc-900/60 to-zinc-950/80 p-8 md:p-10 border border-zinc-800/80 shadow-2xl hover:border-zinc-700/80 transition-all duration-300 backdrop-blur-md">
+                    <div className="relative group rounded-3xl bg-linear-to-b from-zinc-900/60 to-zinc-950/80 p-6 sm:p-8 md:p-10 border border-zinc-800/80 shadow-2xl hover:border-zinc-700/80 transition-all duration-300 backdrop-blur-md">
 
                         {/* Top Badge / Meta info */}
                         <div className="flex justify-between items-start mb-8">
@@ -38,7 +38,7 @@ export default function Pricing() {
                         </div>
 
                         {/* Price Display */}
-                        <div className="flex items-baseline gap-2.5 mb-8">
+                        <div className="flex flex-wrap items-baseline gap-2.5 mb-8">
                             <span className="text-6xl font-extrabold text-white tracking-tight">$59</span>
                             <span className="text-zinc-500 line-through text-lg font-medium">$79</span>
                             <span className="text-zinc-400 text-sm font-medium ml-2">one-time investment</span>

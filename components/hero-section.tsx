@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { TextEffect } from '@/components/motion-primitives/text-effect'
 import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
@@ -51,9 +50,8 @@ export default function HeroSection() {
                                 <AnimatedGroup variants={transitionVariants}>
                                     <Link
                                         href="#"
-                                        className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-xl border pl-2 pr-2 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                                        <span className="text-foreground text-sm">Introducing SleekDemo — Auto Zoom Recorder</span> 
-
+                                        className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-1.5 sm:gap-4 rounded-full border py-0.5 px-2 sm:py-1 sm:px-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
+                                        <span className="text-foreground text-[9px] sm:text-xs md:text-sm font-medium">Introducing SleekDemo — Auto Zoom Recorder</span> 
                                     </Link>
                                 </AnimatedGroup>
 
@@ -71,7 +69,7 @@ export default function HeroSection() {
                                         speedSegment={0.3}
                                         delay={0.15}
                                         as="h1"
-                                        className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-5xl xl:text-[5rem] leading-[1.05] select-none"
+                                        className="text-3xl font-bold tracking-tighter sm:text-6xl md:text-5xl xl:text-[5rem] leading-[1.05] select-none"
                                         segmentClassName="bg-gradient-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent">
                                         with automatic zooms.
                                     </TextEffect>
@@ -82,7 +80,7 @@ export default function HeroSection() {
                                     speedSegment={0.3}
                                     delay={0.5}
                                     as="p"
-                                    className="mx-auto mt-3 max-w-4xl text-balance text-lg">
+                                    className="mx-auto mt-3 max-w-4xl text-balance text-lg hidden sm:block">
                                     Create Sleek, professional screen recordings that automatically zoom into click areas. Perfect for demos, tutorials, and product walkthroughs.
                                 </TextEffect>
 
@@ -101,13 +99,13 @@ export default function HeroSection() {
                                     className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
                                     <div
                                         key={1}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-full sm:w-auto">
+                                        className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
                                         <Button
                                             asChild
                                             size="lg"
-                                            className="rounded-xl px-5 text-base w-full gap-2">
+                                            className="rounded-lg sm:rounded-xl px-3 sm:px-5 text-xs sm:text-base h-7 sm:h-9 w-full gap-1.5 sm:gap-2">
                                             <Link href="#">
-                                                <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="size-3.5 sm:size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.54 9.103 1.51 12.06 1.005 1.45 2.187 3.068 3.76 3.007 1.514-.06 2.088-.973 3.914-.973 1.824 0 2.343.973 3.918.94 1.602-.027 2.637-1.463 3.611-2.885 1.13-1.65 1.6-3.243 1.627-3.328-.035-.015-3.136-1.2-3.17-4.786-.03-2.985 2.45-4.417 2.56-4.484-1.4-2.048-3.57-2.28-4.324-2.33-1.89-.153-3.3.94-3.914.94zm2.146-4.662c.813-.973 1.345-2.234 1.19-3.504-1.09.043-2.4.723-3.18 1.627-.69.799-1.293 2.078-1.127 3.328 1.21.094 2.427-.602 3.117-1.451z"/>
                                                 </svg>
                                                 <span className="text-nowrap">Download for MAC</span>
@@ -116,14 +114,14 @@ export default function HeroSection() {
                                     </div>
                                     <div
                                         key={2}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-full sm:w-auto">
+                                        className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
                                         <Button
                                             asChild
                                             size="lg"
                                             variant="outline"
-                                            className="rounded-xl px-5 text-base bg-background w-full gap-2 border-transparent">
+                                            className="rounded-lg sm:rounded-xl px-3 sm:px-5 text-xs sm:text-base bg-background w-full gap-1.5 sm:gap-2 border-transparent h-7 sm:h-9">
                                             <Link href="#">
-                                                <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className="size-3.5 sm:size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
                                                 </svg>
                                                 <span className="text-nowrap">Download for Windows</span>
@@ -147,7 +145,7 @@ export default function HeroSection() {
                                 ...transitionVariants,
                             }}>
                             <div className="relative mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
-                                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-1.5 sm:p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <div className="bg-background aspect-15/8 relative rounded-2xl overflow-hidden">
                                         <video
                                             src="https://kh12dfduhh.ufs.sh/f/mdESasgdsJvWr9NyI9DLhTo8fsRM4bcnaqXy0PWlZI2Kzt57"

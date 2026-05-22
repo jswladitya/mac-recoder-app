@@ -326,12 +326,9 @@ export function Features() {
   return (
     <section id="features" className="py-24 max-w-7xl mx-auto px-6 md:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-semibold tracking-wider uppercase text-primary mb-3">
-          Powerful Features
-        </h2>
-        <h3 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4 text-balance bg-linear-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent pb-1">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4 text-balance bg-linear-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent pb-1">
           Everything you need for perfect demos
-        </h3>
+        </h2>
       </div>
 
       <BentoGrid className="lg:grid-cols-3">
