@@ -32,7 +32,7 @@ export default function Testimonials() {
         <section id="testimonials" className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="space-y-4">
-                    <h2 className="text-balance text-4xl font-bold tracking-tighter bg-gradient-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent pb-1">What Our Customers Say</h2>
+                    <h2 className="text-balance text-4xl font-bold tracking-tighter bg-gradient-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent pb-1">What Our Customers Say (Fake Data)</h2>
                     <p className="text-muted-foreground text-balance">Hear from the teams and individuals who have transformed their workflow with our platform.</p>
                 </div>
                 <div className="@xl:grid-cols-2 mt-12 grid gap-3">
