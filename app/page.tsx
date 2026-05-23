@@ -1,7 +1,7 @@
 import HeroSection from "@/components/hero-section";
-import { Features } from "./components/Features";
+import Features from "@/components/features-1";
 import AccordionFeatures from "./components/AccordionFeatures";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import { CTA } from "./components/CTA";
@@ -19,10 +19,9 @@ export default function HomePage() {
       <HeroSection />
       {/* <DottedSeparator /> */}
       <Features />
-      <DottedSeparator />
       <AccordionFeatures />
-      <DottedSeparator />
-      <Testimonials />
+      {/* <DottedSeparator />
+      <Testimonials /> */}
       <DottedSeparator />
       <Pricing />
       <DottedSeparator />

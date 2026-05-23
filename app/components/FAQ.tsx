@@ -13,12 +13,12 @@ const faqCategories = [
             {
                 id: 'pf-1',
                 question: 'How does the automatic zoom work?',
-                answer: 'SleekDemo detects your mouse movement and clicks in real-time. It automatically applies smooth, cinematic camera zoom-ins whenever you click on UI elements or enter text, ensuring your viewers never miss important details.',
+                answer: 'SleekDemo detects your mouse movement and clicks in real-time. It automatically applies smooth, cinematic camera zoom-ins whenever you click on UI elements or input text, ensuring your viewers never miss important details.',
             },
             {
                 id: 'pf-2',
                 question: 'Can I customize the zoom speed and scale?',
-                answer: 'Yes! Within the application settings, you can fully customize the zoom level (up to 3x), adjusting transition speed, hover effects, tracking behaviors, and keyframe options to suit your perfect styling choice.',
+                answer: 'Yes! Within the application settings, you can fully customize the zoom level, webcam controls, speed controls, trim controls, and many more options.',
             },
         ],
     },
@@ -29,12 +29,12 @@ const faqCategories = [
             {
                 id: 'pe-1',
                 question: 'Is SleekDemo available for both macOS and Windows?',
-                answer: 'Absolutely! SleekDemo runs natively on both macOS and Windows, optimized perfectly for high performance and low CPU usage. It has full support for Apple Silicon (M1/M2/M3) and modern Intel/AMD processors.',
+                answer: 'Absolutely! SleekDemo runs on both macOS and Windows. It has full support for Apple Silicon (M1/M2/M3) and modern Intel/AMD processors.',
             },
             {
                 id: 'pe-2',
                 question: 'What video formats can I export to?',
-                answer: 'You can export your completed recordings as ultra-high-definition MP4 files in up to 4K resolution. Pro users can also customize the export encoding speed, frame rate (30fps or 60fps), and add custom branded logos.',
+                answer: 'You can export your completed recordings as MP4 video files in up to 4K 60fps.',
             },
         ],
     },
@@ -94,7 +94,7 @@ export default function FAQ() {
                 <p className="text-muted-foreground mt-8 text-center text-sm">
                     Need more help?{' '}
                     <Link
-                        href="#"
+                        href="mailto:adityaships66@gmail.com"
                         className="text-primary font-medium hover:underline">
                         Contact our team
                     </Link>

@@ -58,22 +58,19 @@ const Linkedin = (props: React.SVGProps<SVGSVGElement>) => (
 export function Footer() {
   return (
     <footer className="bg-background py-12 px-6 md:px-8">
-      <div className="max-w-[80rem] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
         <div className="col-span-2 lg:col-span-2 flex flex-col gap-4">
           <Link href="/" className="flex items-center w-fit">
             <Logo className="h-6 w-auto" />
           </Link>
           <p className="text-muted-foreground text-sm max-w-sm">
-            Create beautiful, professional screen recordings with automatic zoom that highlights your clicks and interactions.
+            Create sleek, professional screen recordings with auto zoom that highlights your clicks and interactions.
           </p>
           <div className="flex flex-row gap-4 mt-2">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://x.com/adityaships" className="text-muted-foreground hover:text-foreground transition-colors">
               <Twitter className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              <Github className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://www.linkedin.com/in/adityajaiswal0403/" className="text-muted-foreground hover:text-foreground transition-colors">
               <Linkedin className="h-5 w-5" />
             </Link>
           </div>
@@ -81,23 +78,23 @@ export function Footer() {
 
         <div className="flex flex-col gap-y-4">
           <h4 className="font-semibold text-foreground">Product</h4>
-          <Link href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">Features</Link>
+          <Link href="#how-it-works" className="text-sm text-muted-foreground hover:text-primary transition-colors">How it works</Link>
           <Link href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">Pricing</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Download</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Changelog</Link>
+          {/* <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Download</Link> */}
+          {/* <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Changelog</Link> */}
         </div>
 
         <div className="flex flex-col gap-y-4">
           <h4 className="font-semibold text-foreground">Company</h4>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</Link>
-          <Link href="/#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+          {/* <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</Link> */}
+          {/* <Link href="/#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link> */}
+          <Link href="mailto:adityaships66@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
         </div>
 
         <div className="flex flex-col gap-y-4">
           <h4 className="font-semibold text-foreground">Legal</h4>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
+          <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
         </div>
       </div>
 

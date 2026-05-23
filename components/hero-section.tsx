@@ -5,7 +5,13 @@ import { Button } from '@/components/ui/button'
 import { TextEffect } from '@/components/motion-primitives/text-effect'
 import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
 import { HeroHeader } from "@/components/header"
-
+import { ChevronDown } from 'lucide-react'
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 const transitionVariants = {
     item: {
         hidden: {
@@ -96,37 +102,54 @@ export default function HeroSection() {
                                         },
                                         ...transitionVariants,
                                     }}
-                                    className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                                    <div
-                                        key={1}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
-                                        <Button
-                                            asChild
-                                            size="lg"
-                                            className="rounded-lg sm:rounded-xl px-3 sm:px-5 text-xs sm:text-base h-7 sm:h-9 w-full gap-1.5 sm:gap-2">
-                                            <Link href="#">
-                                                <svg className="size-3.5 sm:size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.54 9.103 1.51 12.06 1.005 1.45 2.187 3.068 3.76 3.007 1.514-.06 2.088-.973 3.914-.973 1.824 0 2.343.973 3.918.94 1.602-.027 2.637-1.463 3.611-2.885 1.13-1.65 1.6-3.243 1.627-3.328-.035-.015-3.136-1.2-3.17-4.786-.03-2.985 2.45-4.417 2.56-4.484-1.4-2.048-3.57-2.28-4.324-2.33-1.89-.153-3.3.94-3.914.94zm2.146-4.662c.813-.973 1.345-2.234 1.19-3.504-1.09.043-2.4.723-3.18 1.627-.69.799-1.293 2.078-1.127 3.328 1.21.094 2.427-.602 3.117-1.451z"/>
-                                                </svg>
-                                                <span className="text-nowrap">Download for MAC</span>
-                                            </Link>
-                                        </Button>
+                                    className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row flex-wrap">
+                                    <div className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
+                                        <DropdownMenu>
+                                            <DropdownMenuTrigger asChild>
+                                                <Button
+                                                    size="lg"
+                                                    className="rounded-lg sm:rounded-xl px-4 sm:px-6 text-sm sm:text-base h-10 sm:h-12 w-full gap-2 cursor-pointer">
+                                                    <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.54 9.103 1.51 12.06 1.005 1.45 2.187 3.068 3.76 3.007 1.514-.06 2.088-.973 3.914-.973 1.824 0 2.343.973 3.918.94 1.602-.027 2.637-1.463 3.611-2.885 1.13-1.65 1.6-3.243 1.627-3.328-.035-.015-3.136-1.2-3.17-4.786-.03-2.985 2.45-4.417 2.56-4.484-1.4-2.048-3.57-2.28-4.324-2.33-1.89-.153-3.3.94-3.914.94zm2.146-4.662c.813-.973 1.345-2.234 1.19-3.504-1.09.043-2.4.723-3.18 1.627-.69.799-1.293 2.078-1.127 3.328 1.21.094 2.427-.602 3.117-1.451z"/>
+                                                    </svg>
+                                                    <span>Download for MAC</span>
+                                                    <ChevronDown className="size-4 opacity-80" />
+                                                </Button>
+                                            </DropdownMenuTrigger>
+                                            <DropdownMenuContent align="center" className="w-56 p-1.5 bg-background border rounded-xl shadow-lg">
+                                                <DropdownMenuItem asChild className="rounded-lg">
+                                                    <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Mac-arm64-Installer.dmg" className="flex items-center gap-2.5 px-3 py-2.5 cursor-pointer hover:bg-muted duration-100">
+                                                        <span className="font-medium text-sm">Apple Silicon (arm64)</span>
+                                                    </Link>
+                                                </DropdownMenuItem>
+                                                <DropdownMenuItem asChild className="rounded-lg">
+                                                    <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Mac-x64-Installer.dmg" className="flex items-center gap-2.5 px-3 py-2.5 cursor-pointer hover:bg-muted duration-100">
+                                                        <span className="font-medium text-sm">Intel (x64)</span>
+                                                    </Link>
+                                                </DropdownMenuItem>
+                                            </DropdownMenuContent>
+                                        </DropdownMenu>
                                     </div>
-                                    <div
-                                        key={2}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
-                                        <Button
-                                            asChild
-                                            size="lg"
-                                            variant="outline"
-                                            className="rounded-lg sm:rounded-xl px-3 sm:px-5 text-xs sm:text-base bg-background w-full gap-1.5 sm:gap-2 border-transparent h-7 sm:h-9">
-                                            <Link href="#">
-                                                <svg className="size-3.5 sm:size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
-                                                </svg>
-                                                <span className="text-nowrap">Download for Windows</span>
-                                            </Link>
-                                        </Button>
+                                    <div className="bg-foreground/10 rounded-[calc(var(--radius-lg)+0.125rem)] sm:rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 w-60 sm:w-auto">
+                                        <DropdownMenu>
+                                            <DropdownMenuTrigger asChild>
+                                                <Button
+                                                    size="lg"
+                                                    variant="outline"
+                                                    className="rounded-lg sm:rounded-xl px-4 sm:px-6 text-sm sm:text-base h-10 sm:h-12 w-full gap-2 cursor-pointer bg-background border-transparent">
+                                                    <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
+                                                    </svg>
+                                                    <span>Download for Windows</span>
+                                                    <ChevronDown className="size-4 opacity-80" />
+                                                </Button>
+                                            </DropdownMenuTrigger>
+                                            <DropdownMenuContent align="center" className="w-56 p-1.5 bg-background border rounded-xl shadow-lg">
+                                                <DropdownMenuItem disabled className="rounded-lg flex items-center gap-2.5 px-3 py-2.5 opacity-50">
+                                                    <span className="font-medium text-sm">Releases Soon</span>
+                                                </DropdownMenuItem>
+                                            </DropdownMenuContent>
+                                        </DropdownMenu>
                                     </div>
                                 </AnimatedGroup>
                             </div>
@@ -148,7 +171,7 @@ export default function HeroSection() {
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-1.5 sm:p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <div className="bg-background aspect-15/8 relative rounded-2xl overflow-hidden">
                                         <video
-                                            src="https://kh12dfduhh.ufs.sh/f/mdESasgdsJvWr9NyI9DLhTo8fsRM4bcnaqXy0PWlZI2Kzt57"
+                                            src="https://kh12dfduhh.ufs.sh/f/mdESasgdsJvWcKKPRpVcbdrIqaRsGFl4XhtCTf3pZxzEi5kw"
                                             autoPlay
                                             loop
                                             muted
