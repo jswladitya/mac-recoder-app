@@ -20,13 +20,20 @@ export function CTA() {
           <h2 className="text-balance text-4xl font-bold tracking-tighter lg:text-5xl bg-linear-to-b from-white via-white via-20% to-zinc-400/90 bg-clip-text text-transparent pb-1">
             Start recording beautiful demos with SleekDemo today
           </h2>
-          <div className="flex justify-center mt-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto cursor-pointer rounded-xl font-semibold px-8 py-6 text-base border-zinc-800 hover:bg-zinc-800 text-zinc-100 transition-all duration-200"
+            >
+              Buy now
+            </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
                   size="lg"
-                  className="gap-2 cursor-pointer rounded-xl font-semibold px-6 py-6 text-base bg-zinc-100 hover:bg-white text-zinc-950 shadow-lg shadow-zinc-950/20 transition-all duration-200">
-                  <span>Download for free</span>
+                  className="w-full sm:w-auto gap-2 cursor-pointer rounded-xl font-semibold px-6 py-6 text-base bg-zinc-100 hover:bg-white text-zinc-950 shadow-lg shadow-zinc-950/20 transition-all duration-200">
+                  <span>Try for free</span>
                   <ChevronDown className="size-4.5 opacity-80" />
                 </Button>
               </DropdownMenuTrigger>

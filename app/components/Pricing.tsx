@@ -39,8 +39,9 @@ export default function Pricing() {
 
                         {/* Price Display */}
                         <div className="flex flex-wrap items-baseline gap-2.5 mb-8">
-                            <span className="text-6xl font-extrabold text-white tracking-tight">$59</span>
+                            <span className="text-6xl font-extrabold text-white tracking-tight">$49</span>
                             <span className="text-zinc-500 line-through text-lg font-medium">$79</span>
+                            <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-400 border border-emerald-500/20">38% OFF</span>
                             <span className="text-zinc-400 text-sm font-medium ml-2">one-time investment</span>
                         </div>
 
@@ -50,8 +51,8 @@ export default function Pricing() {
                         {/* Features List */}
                         <ul className="space-y-5 mb-8">
                             {[
-                                { text: 'All features included', desc: 'Auto-zoom, motion blur, auto caption, ultra HD 4K exports and a lot more' },
-                                { text: 'Free lifetime updates', desc: 'Get every future release, platform improvement, and additional feature automatically forever.' },
+                                { text: 'All features included', desc: 'Auto-zoom, auto pan, ultra HD 4K exports and a lot more' },
+                                { text: 'Lifetime updates', desc: 'Get every future release, updates and additional feature automatically forever.' },
                                 { text: 'Use on up to 3 devices', desc: 'Run SleekDemo on your personal Mac, desktop, and work laptop concurrently.' }
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-4">
@@ -76,7 +77,7 @@ export default function Pricing() {
                                 size="lg"
                                 className="w-full py-6 rounded-xl bg-zinc-100 hover:bg-white text-zinc-950 font-bold shadow-lg shadow-zinc-950/20 transition-all duration-300 cursor-pointer hover:scale-[1.01] active:scale-[0.99] border-t border-white/20">
                                 <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com" className="flex justify-center items-center gap-2">
-                                    Get SleekDemo Lifetime License
+                                    Get Lifetime Access
                                 </Link>
                             </Button> 
                         </div>
