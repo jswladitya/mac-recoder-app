@@ -13,9 +13,10 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 const menuItems = [
-    { name: 'Features', href: '#features' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Features', href: '/#features' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'FAQ', href: '/#faq' },
+    { name: 'Setup', href: '/setup-license' },
 ]
 
 export const HeroHeader = () => {
@@ -50,7 +51,7 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     className="cursor-pointer rounded-xl font-semibold"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com">Buy now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license">Get It Now</Link>
                                 </Button>
                                 <button
                                     onClick={() => setMenuState(!menuState)}
@@ -100,7 +101,7 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     className="hidden lg:flex cursor-pointer rounded-xl font-semibold w-full sm:w-auto"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com">Buy now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license">Get It Now</Link>
                                 </Button>
                                 <DropdownMenu>
                                     <DropdownMenuTrigger asChild>

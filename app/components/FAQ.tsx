@@ -49,8 +49,8 @@ const faqCategories = [
             },
             {
                 id: 'ul-2',
-                question: 'What is included in the Free tier versus the Pro plan?',
-                answer: 'The Free tier includes fully automatic click zoom recording, up to 1080p outputs, and local savings. The Pro plan unlocks ultra-sharp 4K video exports, custom watermarks/branding, direct video cropping/editing tools, and priority customer support.',
+                question: 'What is included with my purchase?',
+                answer: 'Your lifetime license gives you full access to SleekDemo with no recurring fees. This includes automatic click-zooming and panning, ultra HD 4K video exports, offline processing, and the ability to use the app on up to 3 devices concurrently. Plus, you will receive all future feature updates for free, forever.',
             },
         ],
     },
