@@ -27,7 +27,7 @@ export function CTA() {
               className="w-full sm:w-auto cursor-pointer rounded-xl font-semibold px-8 py-6 text-base border-zinc-800 hover:bg-zinc-800 text-zinc-100 transition-all duration-200"
               asChild
             >
-              <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license">Get It Now</Link>
+              <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get It Now</Link>
             </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

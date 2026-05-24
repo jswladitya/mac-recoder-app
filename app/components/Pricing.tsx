@@ -76,7 +76,7 @@ export default function Pricing() {
                                 asChild
                                 size="lg"
                                 className="w-full py-6 rounded-xl bg-zinc-100 hover:bg-white text-zinc-950 font-bold shadow-lg shadow-zinc-950/20 transition-all duration-300 cursor-pointer hover:scale-[1.01] active:scale-[0.99] border-t border-white/20">
-                                <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com" className="flex justify-center items-center gap-2">
+                                <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license" className="flex justify-center items-center gap-2">
                                     Get Lifetime Access
                                 </Link>
                             </Button> 

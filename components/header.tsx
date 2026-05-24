@@ -51,7 +51,7 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     className="cursor-pointer rounded-xl font-semibold"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license">Get It Now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get It Now</Link>
                                 </Button>
                                 <button
                                     onClick={() => setMenuState(!menuState)}
@@ -101,7 +101,7 @@ export const HeroHeader = () => {
                                     variant="outline"
                                     className="hidden lg:flex cursor-pointer rounded-xl font-semibold w-full sm:w-auto"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license">Get It Now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get It Now</Link>
                                 </Button>
                                 <DropdownMenu>
                                     <DropdownMenuTrigger asChild>

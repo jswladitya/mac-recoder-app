@@ -35,7 +35,7 @@ export default function HomePage() {
       price: "59",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      url: "https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://sleekdemo.com/setup-license",
+      url: "https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license",
     },
   };
 
