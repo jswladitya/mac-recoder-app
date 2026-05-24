@@ -47,11 +47,13 @@ export function CTA() {
                     <span className="font-semibold text-sm">Mac (Intel)</span>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem disabled className="rounded-lg flex items-center gap-2.5 px-3 py-2.5 opacity-50 text-zinc-200">
-                  <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
-                  </svg>
-                  <span className="font-semibold text-sm">Windows (Releases Soon)</span>
+                <DropdownMenuItem asChild className="rounded-lg">
+                  <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Windows-Setup.exe" className="flex items-center gap-2.5 px-3 py-2.5 cursor-pointer hover:bg-zinc-900 duration-100 text-zinc-200 hover:text-white">
+                    <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
+                    </svg>
+                    <span className="font-semibold text-sm">Windows (Beta)</span>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

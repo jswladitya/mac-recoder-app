@@ -145,8 +145,10 @@ export default function HeroSection() {
                                                 </Button>
                                             </DropdownMenuTrigger>
                                             <DropdownMenuContent align="center" className="w-56 p-1.5 bg-background border rounded-xl shadow-lg">
-                                                <DropdownMenuItem disabled className="rounded-lg flex items-center gap-2.5 px-3 py-2.5 opacity-50">
-                                                    <span className="font-medium text-sm">Releases Soon</span>
+                                                <DropdownMenuItem asChild className="rounded-lg">
+                                                    <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Windows-Setup.exe" className="flex items-center gap-2.5 px-3 py-2.5 cursor-pointer hover:bg-muted duration-100">
+                                                        <span className="font-medium text-sm">Windows (Beta)</span>
+                                                    </Link>
                                                 </DropdownMenuItem>
                                             </DropdownMenuContent>
                                         </DropdownMenu>
