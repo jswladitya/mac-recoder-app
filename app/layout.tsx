@@ -14,11 +14,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
     default: `${siteConfig.name} - Auto zoom screen recorder`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
   keywords: metadataKeywords,
   openGraph: {
     title: `${siteConfig.name} - Auto zoom screen recorder`,

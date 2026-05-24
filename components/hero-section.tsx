@@ -176,6 +176,8 @@ export default function HeroSection() {
                                             loop
                                             muted
                                             playsInline
+                                            preload="auto"
+                                            poster="https://kh12dfduhh.ufs.sh/f/mdESasgdsJvWOchWjRomcz7er98umXqT1QwkGosMaCVFBlA3"
                                             className="w-full h-full object-cover rounded-2xl"
                                         />
                                     </div>

@@ -43,7 +43,7 @@ export function TextEffect({
       {segments.map((segment: string, i: number) => (
         <motion.span
           key={i}
-          initial={variants.hidden}
+          initial={false}
           animate={variants.visible}
           transition={{
             type: 'spring',

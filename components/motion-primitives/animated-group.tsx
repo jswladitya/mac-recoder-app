@@ -33,7 +33,7 @@ export function AnimatedGroup({ children, className, variants }: AnimatedGroupPr
   return (
     <motion.div
       className={className}
-      initial="hidden"
+      initial={false}
       animate="visible"
       variants={containerVariants}
     >
