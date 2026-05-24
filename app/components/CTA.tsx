@@ -34,7 +34,7 @@ export function CTA() {
                 <Button
                   size="lg"
                   className="w-full sm:w-auto gap-2 cursor-pointer rounded-xl font-semibold px-6 py-6 text-base bg-zinc-100 hover:bg-white text-zinc-950 shadow-lg shadow-zinc-950/20 transition-all duration-200">
-                  <span>Try for free</span>
+                  <span>Download</span>
                   <ChevronDown className="size-4.5 opacity-80" />
                 </Button>
               </DropdownMenuTrigger>

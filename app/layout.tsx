@@ -29,14 +29,6 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "SleekDemo - Beautiful Screen Recordings with auto zoom",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -44,7 +36,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} - Auto zoom screen recorder`,
     description: siteConfig.description,
-    images: ["/og-image.png"],
   },
 };
 

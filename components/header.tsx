@@ -6,10 +6,10 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
 const menuItems = [
@@ -48,10 +48,9 @@ export const HeroHeader = () => {
                             <div className="flex items-center gap-4 lg:hidden">
                                 <Button
                                     size="sm"
-                                    variant="outline"
-                                    className="cursor-pointer rounded-xl font-semibold"
+                                    className="cursor-pointer rounded-xl font-semibold bg-white text-zinc-950 hover:bg-zinc-200 border-transparent"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get It Now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get Lifetime Access</Link>
                                 </Button>
                                 <button
                                     onClick={() => setMenuState(!menuState)}
@@ -95,50 +94,13 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                            <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button
                                     size="sm"
-                                    variant="outline"
-                                    className="hidden lg:flex cursor-pointer rounded-xl font-semibold w-full sm:w-auto"
+                                    className="hidden lg:flex cursor-pointer rounded-xl font-semibold w-full sm:w-auto bg-white text-zinc-950 hover:bg-zinc-200 border-transparent"
                                     asChild>
-                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get It Now</Link>
+                                    <Link href="https://checkout.dodopayments.com/buy/pdt_0Nf7VduORcHwUr1WWx7lX?quantity=1&redirect_url=https://www.sleekdemo.com%2Fsetup-license">Get Lifetime Access</Link>
                                 </Button>
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger asChild>
-                                        <Button
-                                            size="sm"
-                                            className="gap-1.5 cursor-pointer rounded-xl font-semibold w-full sm:w-auto">
-                                            <span>Try for free</span>
-                                            <ChevronDown className="size-3.5 opacity-80" />
-                                        </Button>
-                                    </DropdownMenuTrigger>
-                                    <DropdownMenuContent align="end" className="w-52 p-1.5 bg-background border rounded-xl shadow-lg">
-                                        <DropdownMenuItem asChild className="rounded-lg">
-                                            <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Mac-arm64-Installer.dmg" className="flex items-center gap-2 px-2.5 py-2 cursor-pointer hover:bg-muted duration-100">
-                                                <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.54 9.103 1.51 12.06 1.005 1.45 2.187 3.068 3.76 3.007 1.514-.06 2.088-.973 3.914-.973 1.824 0 2.343.973 3.918.94 1.602-.027 2.637-1.463 3.611-2.885 1.13-1.65 1.6-3.243 1.627-3.328-.035-.015-3.136-1.2-3.17-4.786-.03-2.985 2.45-4.417 2.56-4.484-1.4-2.048-3.57-2.28-4.324-2.33-1.89-.153-3.3.94-3.914.94zm2.146-4.662c.813-.973 1.345-2.234 1.19-3.504-1.09.043-2.4.723-3.18 1.627-.69.799-1.293 2.078-1.127 3.328 1.21.094 2.427-.602 3.117-1.451z"/>
-                                                </svg>
-                                                <span className="font-medium text-sm">Mac (Apple Silicon)</span>
-                                            </Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem asChild className="rounded-lg">
-                                            <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Mac-x64-Installer.dmg" className="flex items-center gap-2 px-2.5 py-2 cursor-pointer hover:bg-muted duration-100">
-                                                <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.54 9.103 1.51 12.06 1.005 1.45 2.187 3.068 3.76 3.007 1.514-.06 2.088-.973 3.914-.973 1.824 0 2.343.973 3.918.94 1.602-.027 2.637-1.463 3.611-2.885 1.13-1.65 1.6-3.243 1.627-3.328-.035-.015-3.136-1.2-3.17-4.786-.03-2.985 2.45-4.417 2.56-4.484-1.4-2.048-3.57-2.28-4.324-2.33-1.89-.153-3.3.94-3.914.94zm2.146-4.662c.813-.973 1.345-2.234 1.19-3.504-1.09.043-2.4.723-3.18 1.627-.69.799-1.293 2.078-1.127 3.328 1.21.094 2.427-.602 3.117-1.451z"/>
-                                                </svg>
-                                                <span className="font-medium text-sm">Mac (Intel)</span>
-                                            </Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem asChild className="rounded-lg">
-                                            <Link href="https://github.com/jswladitya/updater-releases/releases/download/v1.6.0/SleekDemo-Windows-Setup.exe" className="flex items-center gap-2 px-2.5 py-2 cursor-pointer hover:bg-muted duration-100">
-                                                <svg className="size-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"/>
-                                                </svg>
-                                                <span className="font-medium text-sm">Windows (Beta)</span>
-                                            </Link>
-                                        </DropdownMenuItem>
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
                             </div>
                         </div>
                     </div>
