@@ -102,9 +102,14 @@ export function Footer() {
         <p className="text-xs text-muted-foreground">
           &copy; {new Date().getFullYear()} SleekDemo. All rights reserved.
         </p>
-        <p className="text-xs text-muted-foreground flex items-center">
-          Built with ❤️ for creators by Aditya Jaiswal
-        </p>
+        <div className="flex flex-col md:items-end items-center gap-1">
+          <p className="text-xs text-muted-foreground flex items-center">
+            Built with ❤️ for creators by Aditya Jaiswal
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Built on top of OpenScreen by <Link href="https://github.com/siddharthvaddem" target="_blank" rel="noreferrer" className="underline hover:text-primary transition-colors">Siddharth Vaddem</Link>
+          </p>
+        </div>
       </div>
     </footer>
   );
