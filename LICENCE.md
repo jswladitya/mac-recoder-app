@@ -1,6 +1,6 @@
 ### Acknowledgments
 
-This project was built using OpenScreen and other open-source technologies.
+This project was built on top of OpenScreen codebase
 
 
 ------ MIT Licence from OpenScreen codebase -----
